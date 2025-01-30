@@ -10,9 +10,9 @@ body {
 .grid {
     display: grid;
     width: 80vmin;
-    height: 80vmin;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
+    height: 60vmin;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 5px;
     background-color: black;
 }
@@ -23,12 +23,10 @@ body {
 
 .red {
     background-color: red;
-    grid-column: span 2;
 }
 
 .blue {
     background-color: blue;
-    grid-row: span 2;
 }
 
 .yellow {
