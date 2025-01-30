@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    width: 80vmin;
+    height: 80vmin;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    gap: 5px;
+    background-color: black;
+}
+
+.block {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+    grid-column: span 2;
+}
+
+.blue {
+    background-color: blue;
+    grid-row: span 2;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
